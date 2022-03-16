@@ -1,0 +1,18 @@
+body {
+  background-color: #fdeff4;
+}
+h1 {
+  font-size: 1.5rem;
+}
+.primary-bg-color {
+  background-color: #524a4e;
+}
+.secondary-bg-color {
+  background-color: #ff5c8d;
+}
+.basic-bg-color {
+  background-color: #fdeff4;
+}
+.primary-color {
+  color: #524a4e;
+}
