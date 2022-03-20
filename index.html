@@ -5,47 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <title>Berita</title>
+    <title>Symfony food</title>
   </head>
   <body>
     <!-- header -->
     <section id="header">
       <nav class="navbar navbar-expand-lg navbar-dark primary-bg-color">
         <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <a class="navbar-brand" href="#">Symfony food</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="#">New</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Category</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Category</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Tutorial</a></li>
+                  <li><a class="dropdown-item" href="#">Food Photography</a></li>
+                  <li><a class="dropdown-item" href="#">Review</a></li>
+                  <li><a class="dropdown-item" href="story.html">Story</a></li>
+                </ul>
               </li>
+              <li class="nav-item"><a class="nav-link">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -56,50 +46,22 @@
     <!-- content -->
     <section id="content">
       <div class="container">
-        <div
-          id="carouselExampleDark"
-          class="carousel carousel-dark slide"
-          data-bs-ride="carousel"
-        >
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner bg-white mt-4 mb-4 p-3">
-            <div
-              class="carousel-item active rounded h-100 corousel-box"
-              data-bs-interval="10000"
-            >
+            <div class="carousel-item active rounded h-100 corousel-box" data-bs-interval="10000">
               <div class="row h-100">
                 <div class="col-md-6">
-                  <img
-                    src="images/coffee-cup-with-dates-fruit-beads.jpg"
-                    alt="..."
-                    class="w-100"
-                  />
+                  <img src="images/coffee-cup-with-dates-fruit-beads.jpg" alt="..." class="w-100" />
                 </div>
                 <div class="col-md-6 h-100 vertical-auto">
                   <div>
-                    <h1>First slide label</h1>
-                    <p class="primary-color">John doe | Dec 12,2022</p>
+                    <h1 class="title">First slide label</h1>
+                    <p class="primary-color"><span class="badge primary-bg-color">Story</span> John doe | Dec 12, 2022</p>
                   </div>
                 </div>
               </div>
@@ -108,16 +70,12 @@
             <div class="carousel-item rounded h-100" data-bs-interval="10000">
               <div class="row h-100">
                 <div class="col-md-6">
-                  <img
-                    src="images/delicious-vietnamese-food-including-pho-ga-noodles-spring-rolls-white-table.jpg"
-                    alt="..."
-                    class="w-100"
-                  />
+                  <img src="images/delicious-vietnamese-food-including-pho-ga-noodles-spring-rolls-white-table.jpg" alt="..." class="w-100" />
                 </div>
                 <div class="col-md-6 h-100 vertical-auto">
                   <div>
-                    <h1>First slide label</h1>
-                    <p class="primary-color">John doe | Dec 12,2022</p>
+                    <h1 class="title">First slide label</h1>
+                    <p class="primary-color"><span class="badge primary-bg-color">Story</span> John doe | Dec 12, 2022</p>
                   </div>
                 </div>
               </div>
@@ -126,36 +84,22 @@
             <div class="carousel-item rounded h-100" data-bs-interval="10000">
               <div class="row h-100">
                 <div class="col-md-6">
-                  <img
-                    src="images/ramadan-kareem-blog-banner-with-greeting.jpg"
-                    alt="..."
-                    class="w-100"
-                  />
+                  <img src="images/ramadan-kareem-blog-banner-with-greeting.jpg" alt="..." class="w-100" />
                 </div>
                 <div class="col-md-6 h-100 vertical-auto">
                   <div>
-                    <h1>First slide label</h1>
-                    <p class="primary-color">John doe | Dec 12,2022</p>
+                    <h1 class="title">First slide label</h1>
+                    <p class="primary-color"><span class="badge primary-bg-color">Tutorial</span> John doe | Dec 12, 2022</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev"
-          >
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="next"
-          >
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -164,267 +108,165 @@
         <!-- new content -->
         <div id="newNews" class="row mt-3">
           <div class="col-md-8">
-            <div class="pt-2 ps-2 pb-2 pe-2 mb-2 bg-white rounded">
-              <h1>New Article</h1>
+            <div class="pt-3 ps-3 pb-1 pe-2 mb-2 bg-white rounded">
+              <h1 class="title">New Article</h1>
             </div>
 
             <div class="pt-2 ps-2 pb-2 pe-2 mb-2 bg-white rounded">
-              <img
-                src="images/coffee-cup-with-dates-fruit-beads.jpg"
-                width="40%"
-                alt=""
-                class="float-start me-3"
-              />
+              <img src="images/coffee-cup-with-dates-fruit-beads.jpg" width="40%" alt="" class="float-start me-3" />
               <div class="text">
-                <h4>Lorem Ipsum is simply dummy</h4>
-                <p class="primary-color">John doe | Dec 12,2022</p>
+                <h1 class="title"><a href="">Lorem Ipsum is simply dummy</a></h1>
+                <p class="primary-color"><span class="badge primary-bg-color">Story</span> John doe | Dec 12, 2022</p>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.
-                  <button class="btn btn-sm secondary-bg-color text-white">
-                    Read more...
-                  </button>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                  make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <a href="#" class="btn btn-sm secondary-bg-color text-white">Read more...</a>
                 </p>
               </div>
             </div>
 
             <div class="pt-2 ps-2 pb-2 pe-2 mb-2 bg-white rounded">
-              <img
-                src="images/dried-fruits-nuts-dates-lukum-baklava-white-background-with-space-writing-text.jpg"
-                width="40%"
-                alt=""
-                class="float-start me-3"
-              />
+              <img src="images/dried-fruits-nuts-dates-lukum-baklava-white-background-with-space-writing-text.jpg" width="40%" alt="" class="float-start me-3" />
               <div class="text">
-                <h4>Lorem Ipsum is simply dummy</h4>
-                <p class="primary-color">John doe | Dec 12,2022</p>
+                <h1 class="title">Lorem Ipsum is simply dummy</h1>
+                <p class="primary-color"><span class="badge primary-bg-color text-white">Review</span> John doe | Dec 12, 2022</p>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.
-                  <button class="btn btn-sm secondary-bg-color text-white">
-                    Read more...
-                  </button>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                  make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <a class="btn btn-sm secondary-bg-color text-white">Read more...</a>
                 </p>
               </div>
             </div>
 
             <div class="pt-2 ps-2 pb-2 pe-2 mb-2 bg-white rounded">
-              <img
-                src="images/ramadan-kareem-blog-banner-with-greeting.jpg"
-                width="40%"
-                alt=""
-                class="float-start me-3"
-              />
+              <img src="images/ramadan-kareem-blog-banner-with-greeting.jpg" width="40%" alt="" class="float-start me-3" />
               <div class="text">
-                <h4>Lorem Ipsum is simply dummy</h4>
-                <p class="primary-color">John doe | Dec 12,2022</p>
+                <h1 class="title">Lorem Ipsum is simply dummy</h1>
+                <p class="primary-color"><span class="badge primary-bg-color">Story</span> John doe | Dec 12, 2022</p>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.
-                  <button class="btn btn-sm secondary-bg-color text-white">
-                    Read more...
-                  </button>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                  make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <a class="btn btn-sm secondary-bg-color text-white">Read more...</a>
                 </p>
               </div>
             </div>
 
             <div class="pt-2 ps-2 pb-2 pe-2 mb-2 bg-white rounded">
-              <img
-                src="images/delicious-vietnamese-food-including-pho-ga-noodles-spring-rolls-white-table.jpg"
-                width="40%"
-                alt=""
-                class="float-start me-3"
-              />
+              <img src="images/delicious-vietnamese-food-including-pho-ga-noodles-spring-rolls-white-table.jpg" width="40%" alt="" class="float-start me-3" />
               <div class="text">
-                <h4>Lorem Ipsum is simply dummy</h4>
-                <p class="primary-color">John doe | Dec 12,2022</p>
+                <h1 class="title">Lorem Ipsum is simply dummy</h1>
+                <p class="primary-color"><span class="badge primary-bg-color">Story</span> John doe | Dec 12, 2022</p>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged.
-                  <button class="btn btn-sm secondary-bg-color text-white">
-                    Read more...
-                  </button>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                  make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  <a class="btn btn-sm secondary-bg-color text-white">Read more...</a>
                 </p>
               </div>
+            </div>
+
+            <div>
+              <button class="btn btn-sm primary-bg-color text-white mt-2 mb-2">Old Post</button>
             </div>
           </div>
 
           <!-- hot topic -->
           <div class="col-md-4 ps-2">
-            <div
-              class="top-right-content mb-2 bg-white rounded overflow-auto p-2"
-            >
-              <h1>Hot Topic</h1>
+            <div class="top-right-content mb-2 bg-white rounded overflow-auto ps-3 pt-3 pb-1 pe-2">
+              <h1 class="title">Hot Topic</h1>
             </div>
 
-            <div
-              class="top-right-content mb-2 bg-white rounded overflow-auto p-2"
-            >
+            <div class="top-right-content mb-2 bg-white rounded overflow-auto p-2">
               <div class="float-start me-2 box-top-right">
-                <img
-                  src="images/delicious-vietnamese-food-including-pho-ga-noodles-spring-rolls-white-table.jpg"
-                  width="100%"
-                />
+                <img src="images/delicious-vietnamese-food-including-pho-ga-noodles-spring-rolls-white-table.jpg" width="100%" />
               </div>
               <div>
                 <h6>Lorem Ipsum is simply dummy</h6>
-                <p class="primary-color lh-sm">John doe | Dec 12,2022</p>
-                <button class="btn btn-sm secondary-bg-color text-white">
-                  Read more...
-                </button>
+                <p class="primary-color lh-sm">John doe | Dec 12, 2022</p>
+                <a class="btn btn-sm secondary-bg-color text-white">Read more...</a>
               </div>
             </div>
 
-            <div
-              class="top-right-content mb-2 bg-white rounded overflow-auto p-2"
-            >
+            <div class="top-right-content mb-2 bg-white rounded overflow-auto p-2">
               <div class="float-start me-2 box-top-right">
-                <img
-                  src="images/ramadan-kareem-blog-banner-with-greeting.jpg"
-                  width="100%"
-                />
+                <img src="images/ramadan-kareem-blog-banner-with-greeting.jpg" width="100%" />
               </div>
               <div>
                 <h6>Lorem Ipsum is simply dummy</h6>
-                <p class="primary-color lh-sm">John doe | Dec 12,2022</p>
-                <button class="btn btn-sm secondary-bg-color text-white">
-                  Read more...
-                </button>
+                <p class="primary-color lh-sm">John doe | Dec 12, 2022</p>
+                <a class="btn btn-sm secondary-bg-color text-white">Read more...</a>
               </div>
             </div>
 
-            <div
-              class="top-right-content mb-2 bg-white rounded overflow-auto p-2"
-            >
+            <div class="top-right-content mb-2 bg-white rounded overflow-auto p-2">
               <div class="float-start me-2 box-top-right">
-                <img
-                  src="images/coffee-cup-with-dates-fruit-beads.jpg"
-                  width="100%"
-                />
+                <img src="images/coffee-cup-with-dates-fruit-beads.jpg" width="100%" />
               </div>
               <div>
                 <h6>Lorem Ipsum is simply dummy</h6>
-                <p class="primary-color lh-sm">John doe | Dec 12,2022</p>
-                <button class="btn btn-sm secondary-bg-color text-white">
-                  Read more...
-                </button>
+                <p class="primary-color lh-sm">John doe | Dec 12, 2022</p>
+                <a class="btn btn-sm secondary-bg-color text-white">Read more...</a>
               </div>
             </div>
 
-            <div
-              class="top-right-content mb-2 bg-white rounded overflow-auto p-2"
-            >
+            <div class="top-right-content mb-2 bg-white rounded overflow-auto p-2">
               <div class="float-start me-2 box-top-right">
-                <img
-                  src="images/dried-fruits-nuts-dates-lukum-baklava-white-background-with-space-writing-text.jpg"
-                  width="100%"
-                />
+                <img src="images/dried-fruits-nuts-dates-lukum-baklava-white-background-with-space-writing-text.jpg" width="100%" />
               </div>
               <div>
                 <h6>Lorem Ipsum is simply dummy</h6>
-                <p class="primary-color lh-sm">John doe | Dec 12,2022</p>
-                <button class="btn btn-sm secondary-bg-color text-white">
-                  Read more...
-                </button>
+                <p class="primary-color lh-sm">John doe | Dec 12, 2022</p>
+                <a class="btn btn-sm secondary-bg-color text-white">Read more...</a>
               </div>
             </div>
             <!-- end hot topic -->
 
             <!-- editor's pick -->
             <div class="top-right-content mb-2 bg-white rounded overflow-auto">
-              <div class="border-bottom p-2 m-0">
-                <h1>Editor's Pick</h1>
+              <div class="border-bottom ps-3 pt-3 pb-1 pe-2 m-0">
+                <h1 class="title">Editor's Pick</h1>
               </div>
 
-              <div
-                class="top-right-content mt-2 bg-white overflow-auto p-2 border-bottom"
-              >
+              <div class="top-right-content mt-2 bg-white overflow-auto p-2 border-bottom">
                 <div class="float-start me-2 box-top-right">
-                  <img
-                    src="images/coffee-cup-with-dates-fruit-beads.jpg"
-                    width="100%"
-                  />
+                  <img src="images/coffee-cup-with-dates-fruit-beads.jpg" width="100%" />
                 </div>
                 <div>
                   <h6>Lorem Ipsum is simply dummy</h6>
-                  <p class="primary-color lh-sm">John doe | Dec 12,2022</p>
-                  <button class="btn btn-sm secondary-bg-color text-white">
-                    Read more...
-                  </button>
+                  <p class="primary-color lh-sm">John doe | Dec 12, 2022</p>
+                  <a class="btn btn-sm secondary-bg-color text-white">Read more...</a>
                 </div>
               </div>
 
-              <div
-                class="top-right-content mt-2 bg-white overflow-auto p-2 border-bottom"
-              >
+              <div class="top-right-content mt-2 bg-white overflow-auto p-2 border-bottom">
                 <div class="float-start me-2 box-top-right">
-                  <img
-                    src="images/dried-fruits-nuts-dates-lukum-baklava-white-background-with-space-writing-text.jpg"
-                    width="100%"
-                  />
+                  <img src="images/dried-fruits-nuts-dates-lukum-baklava-white-background-with-space-writing-text.jpg" width="100%" />
                 </div>
                 <div>
                   <h6>Lorem Ipsum is simply dummy</h6>
-                  <p class="primary-color lh-sm">John doe | Dec 12,2022</p>
-                  <button class="btn btn-sm secondary-bg-color text-white">
-                    Read more...
-                  </button>
+                  <p class="primary-color lh-sm">John doe | Dec 12, 2022</p>
+                  <a class="btn btn-sm secondary-bg-color text-white">Read more...</a>
                 </div>
               </div>
 
-              <div
-                class="top-right-content mt-2 bg-white overflow-auto p-2 border-bottom"
-              >
+              <div class="top-right-content mt-2 bg-white overflow-auto p-2 border-bottom">
                 <div class="float-start me-2 box-top-right">
-                  <img
-                    src="images/dried-fruits-nuts-dates-lukum-baklava-white-background-with-space-writing-text.jpg"
-                    width="100%"
-                  />
+                  <img src="images/dried-fruits-nuts-dates-lukum-baklava-white-background-with-space-writing-text.jpg" width="100%" />
                 </div>
                 <div>
                   <h6>Lorem Ipsum is simply dummy</h6>
-                  <p class="primary-color lh-sm">John doe | Dec 12,2022</p>
-                  <button class="btn btn-sm secondary-bg-color text-white">
-                    Read more...
-                  </button>
+                  <p class="primary-color lh-sm">John doe | Dec 12, 2022</p>
+                  <a class="btn btn-sm secondary-bg-color text-white">Read more...</a>
                 </div>
               </div>
 
-              <div
-                class="top-right-content mt-2 bg-white overflow-auto p-2 border-bottom"
-              >
+              <div class="top-right-content mt-2 bg-white overflow-auto p-2 border-bottom">
                 <div class="float-start me-2 box-top-right">
-                  <img
-                    src="images/ramadan-kareem-blog-banner-with-greeting.jpg"
-                    width="100%"
-                  />
+                  <img src="images/ramadan-kareem-blog-banner-with-greeting.jpg" width="100%" />
                 </div>
                 <div>
                   <h6>Lorem Ipsum is simply dummy</h6>
-                  <p class="primary-color lh-sm">John doe | Dec 12,2022</p>
-                  <button class="btn btn-sm secondary-bg-color text-white">
-                    Read more...
-                  </button>
+                  <p class="primary-color lh-sm">John doe | Dec 12, 2022</p>
+                  <a class="btn btn-sm secondary-bg-color text-white">Read more...</a>
                 </div>
               </div>
             </div>
@@ -436,13 +278,35 @@
     </section>
     <!-- end content -->
 
-    <footer class="container p-1">
-      <div class="row ms-2 me-2 mb-2 p-4 rounded bg-white">
-        <div class="col-md-4 fw-bold">
-          <p class="fw-bold">Create with &#10084;</p>
-          <p>2022, John doe</p>
+    <!-- footer -->
+    <footer class="container p-1 mt-2">
+      <div class="row ms-2 me-2 mb-2 pb-0 pt-4 rounded bg-white">
+        <div class="col-md-4 ps-4 ms-0">
+          <p class="footer-category-header w-50 mb-0 pb-0">
+            <span class="fw-bold">Address:</span>
+          </p>
+          <p>
+            John doe<br />
+            No one street<br />
+            Greenland 55
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <ul class="footer-category ms-2 ps-0 w-50">
+            <li class="footer-category-header">Category</li>
+            <li>Tutorial</li>
+            <li>Review</li>
+            <li>Food Photography</li>
+            <li>Story</li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 mt-auto text-md-end text-lg-end text-sm-center">
+          <p>Create with &#10084; 2022, Selaicoding.com</p>
         </div>
       </div>
     </footer>
+    <!-- end footer -->
   </body>
 </html>

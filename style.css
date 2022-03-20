@@ -4,8 +4,9 @@ body {
   background-color: #fdeff4;
   font-family: "Montserrat", sans-serif;
 }
-h1 {
-  font-size: 1.5rem;
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 .primary-bg-color {
   background-color: #524a4e;
@@ -18,6 +19,9 @@ h1 {
 }
 .primary-color {
   color: #524a4e;
+}
+.category-color {
+  background-color: #d82148;
 }
 img {
   object-fit: cover;
@@ -41,4 +45,39 @@ img {
 }
 .border-bottom {
   border-bottom: 1px solid #850c48;
+}
+.footer-category {
+  list-style-type: none;
+  list-style-position: outside;
+}
+.footer-category-header {
+  border-bottom: 1px dashed silver;
+  font-weight: bold;
+}
+.top-right-content {
+  font-size: 0.87rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #770d2d;
+  background-color: #524a4e;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.4rem;
 }
