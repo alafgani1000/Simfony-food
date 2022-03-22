@@ -6,10 +6,14 @@ this is an html template for a blog or web with the theme of cooking, food and i
 
 ## Technology
 
-Html
-Css
-bootstrap 5
+- Html
+- Css
+- bootstrap 5
 
 ## Thanks to
 
 freepik for images
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
